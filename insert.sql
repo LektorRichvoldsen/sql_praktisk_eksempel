@@ -1,0 +1,78 @@
+INSERT INTO film (id, tittel, utgitt, lengde) VALUES ('1','Eriks Film','2024','123');
+INSERT INTO film (id, tittel, utgitt, lengde) VALUES ('2','Haisommer','1978','113');
+INSERT INTO film (id, tittel, utgitt, lengde) VALUES ('3','Dukkehuset','1880','965');
+INSERT INTO film (id, tittel, utgitt, lengde) VALUES ('4','Dagboken','2006','93');
+INSERT INTO film (id, tittel, utgitt, lengde) VALUES ('5','Bernts Film','1993','81');
+INSERT INTO film (id, tittel, utgitt, lengde) VALUES ('6','Sarah Lager Vafler','1987','120');
+INSERT INTO film (id, tittel, utgitt, lengde) VALUES ('7','Teleskopet','1994','110');
+INSERT INTO film (id, tittel, utgitt, lengde) VALUES ('8','Teleskopet 2','2001','143');
+INSERT INTO film (id, tittel, utgitt, lengde) VALUES ('9','Per Kjøper Ku','1924','23');
+INSERT INTO film (id, tittel, utgitt, lengde) VALUES ('10','Saw V','2014','108');
+INSERT INTO film (id, tittel, utgitt, lengde) VALUES ('11','Jojo Rabbit','2019','128');
+
+
+INSERT INTO sjanger (id, sjanger) VALUES ('11','Drama');
+INSERT INTO sjanger (id, sjanger) VALUES ('22','Horror');
+INSERT INTO sjanger (id, sjanger) VALUES ('33','Sci-Fi');
+INSERT INTO sjanger (id, sjanger) VALUES ('44','Action');
+INSERT INTO sjanger (id, sjanger) VALUES ('55','Komedie');
+INSERT INTO sjanger (id, sjanger) VALUES ('66','Musical');
+INSERT INTO sjanger (id, sjanger) VALUES ('77','Skrekk');
+INSERT INTO sjanger (id, sjanger) VALUES ('88','Dokumentar');
+
+INSERT INTO film_has_sjanger (film_id, sjanger_id) VALUES ('1','77');
+INSERT INTO film_has_sjanger (film_id, sjanger_id) VALUES ('2','88');
+INSERT INTO film_has_sjanger (film_id, sjanger_id) VALUES ('3','11');
+INSERT INTO film_has_sjanger (film_id, sjanger_id) VALUES ('4','11');
+INSERT INTO film_has_sjanger (film_id, sjanger_id) VALUES ('5','33');
+INSERT INTO film_has_sjanger (film_id, sjanger_id) VALUES ('6','44');
+INSERT INTO film_has_sjanger (film_id, sjanger_id) VALUES ('7','77');
+INSERT INTO film_has_sjanger (film_id, sjanger_id) VALUES ('8','66');
+INSERT INTO film_has_sjanger (film_id, sjanger_id) VALUES ('9','44');
+INSERT INTO film_has_sjanger (film_id, sjanger_id) VALUES ('10','22');
+INSERT INTO film_has_sjanger (film_id, sjanger_id) VALUES ('11','55');
+INSERT INTO film_has_sjanger (film_id, sjanger_id) VALUES ('11','11');
+
+INSERT INTO person (id, fornavn, etternavn) VALUES ('111','Erik', 'Perik');
+INSERT INTO person (id, fornavn, etternavn) VALUES ('222','Lise', 'Pise');
+INSERT INTO person (id, fornavn, etternavn) VALUES ('333','Taika', 'Waititi');
+INSERT INTO person (id, fornavn, etternavn) VALUES ('444','Stephen', 'Speilegg');
+INSERT INTO person (id, fornavn, etternavn) VALUES ('555','Mikkel', 'Rev');
+
+INSERT INTO rolle (id, rolle) VALUES ('1111','Regissør');
+INSERT INTO rolle (id, rolle) VALUES ('2222','Manusforfatter');
+INSERT INTO rolle (id, rolle) VALUES ('3333','Skuespiller');
+INSERT INTO rolle (id, rolle) VALUES ('4444','Fotograf');
+
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('333', '11', '1111' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('333', '11', '2222' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('333', '11', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('111', '1', '2222' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('111', '7', '2222' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('111', '4', '2222' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('111', '10', '2222' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('222', '1', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('222', '2', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('222', '3', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('222', '4', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('222', '5', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('222', '6', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('222', '7', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('222', '8', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('222', '9', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('222', '10', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('444', '1', '4444' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('444', '2', '4444' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('444', '3', '4444' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('444', '4', '4444' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('444', '5', '4444' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('444', '9', '4444' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('222', '2', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('555', '3', '1111' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('555', '4', '1111' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('555', '5', '1111' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('555', '6', '1111' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('555', '7', '1111' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('111', '8', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('111', '9', '3333' );
+INSERT INTO person_has_rolle_in_film (person_id, film_id, rolle_id) VALUES('111', '10', '3333' );
